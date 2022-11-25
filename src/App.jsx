@@ -44,13 +44,16 @@ function App() {
 
       <div className='flex justify-between my-6'>
         
-        <Button/>
-       <button
-        type='button'
-        className='h-10 w-10 flex items-center justify-center font-bold text-white text-2xl bg-lime-500 rounded-full 
-        hover:outline-none hover:ring-2 hover:ring-offset-2
-        hover:ring-lime-500'
-        onClick={handleClickIncremento}>+</button>
+        <Button
+        operador="-"
+        fn={handleClickDecremento}
+        />
+
+        <Button
+        operador="+"
+        fn={handleClickIncremento}
+        />
+       
         </div>
 
       <input type="range" className="w-full h-6 bg-gray-200 accent-lime-500 hover:accent-lime-600"
