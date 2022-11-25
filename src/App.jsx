@@ -6,7 +6,7 @@ import { formatearDinero } from './helpers'
 function App() {
    
   const [cantidad, setCantidad] = useState(10000);
-  const [meses, setMeses] = useState(6);
+  const [meses, setMeses] = useState(6); 
 
   const MIN = 0;
   const MAX = 20000;
@@ -90,6 +90,16 @@ function App() {
         <option value="24">24 meses</option>
 
       </select>
+
+      <div className='my-5 space-y-3 bg-gray-50 p-5'>
+      <h2 className='text-2xl font-extrabold text-gray-500 text-center'>
+       Resumen <span className='text-indigo-600'>de pagos </span>a pagar
+      </h2>
+
+      <p className='text-xl text-gray-500 text-center font-bold'>{meses}Meses</p>
+      <p className='text-xl text-gray-500 text-center font-bold'>Total a pagar</p>
+      <p className='text-xl text-gray-500 text-center font-bold'>Mensuales</p>
+      </div>
     </div>
   )
 }
